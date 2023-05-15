@@ -100,6 +100,7 @@ ul.navbar li a {
   background-color: #285347;
   color: white;
   padding: 10px 20px;
+  margin: 10px 20px;
   border-radius: 10px;
   position: absolute;
   top: 30px;
@@ -212,7 +213,6 @@ ul.navbar li a {
 
 .container {
   background-color: #002B20;
-  height: 1200px;
   width: 100%;
   text-align: center;
 }
@@ -245,6 +245,7 @@ ul.navbar li a {
 
 .depbot,
 .lumi {
+  min-width: 260px;
   padding:30px;
   width: 100%;
   background-color: #003227;
@@ -297,6 +298,7 @@ ul.navbar li a {
 
 .mitten,
 .netcord-articles {
+  min-width: 260px;
   padding:30px;
   width: 100%;
   background-color: #003227;
@@ -363,11 +365,12 @@ margin:0;
   color: white;
   padding: 8px 20px;
   border-radius: 10px;
-  position: center;
+  display: inline-block;
   margin-top: 10px;
   text-decoration: none;
   transition: background-color 0.3s;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 100px;
 }
 
 
@@ -400,5 +403,78 @@ margin:0;
   .projects-content {
     width: 100%;
     padding: 0 50px;
+  }
+}
+@media screen and (max-width:852px){
+  .bottom-hero{
+    flex-direction: column;
+  }
+  .hero-image{
+    display: block;
+    margin-top: -12rem;
+  }
+  .bottom-hero-title{
+    width: 100%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (max-width:686px){
+  .projects-content{
+    grid-template-columns: 1fr;
+
+  }
+  .hero-section{
+    padding: 0 10px;
+  }
+  .hero-title{
+    margin-top: 60px;
+    font-size: 35px;
+  }
+  .hero-image {
+
+    margin-top: -6.5rem;
+  }
+  .bottom-hero,  .projects-content , .bottom-section{
+    padding: 0 10px;
+  }
+  .bottom-hero-title{
+    padding: 0 15px;
+    text-align: center;
+  }
+  .bottom-hero-subtitle{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  .socials li{
+    flex: 1 1 0;
+  }
+  .socials li img{
+    width: 100%;
+  }
+  .projects-title,.bottom-heading{
+    font-size: 30px;
+  }
+  .projects-content {
+    padding: 0 10px;
+  }
+  .depbot,.lumi,.mitten,.netcord-articles{
+    padding: 25px;
+  }
+  .project-header{
+    gap: 12px;
+  }
+  .depbot-avatar,.lumi-avatar,.mitten-avatar,.netcord-articles-avatar{
+    width: 40px;
+  }
+  .depbot-heading,.lumi-heading,.netcord-articles-heading,.mitten-heading{
+    font-size: 26px;
+  }
+  .depbot-about,.lumi-about,.netcord-articles-about,.mitten-about{
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .bottom-paragraph{
+    margin: 10px 0;
   }
 }
