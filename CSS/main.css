@@ -153,7 +153,7 @@ ul.navbar li a {
   user-select: none;
   position: relative;
   z-index: -10;
-  transform: scale(1.2);
+  transform: scale(1.01);
 }
 
 /* Bottom Hero Section */
@@ -355,7 +355,7 @@ ul.navbar li a {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .bottom-paragraph {
@@ -375,7 +375,7 @@ ul.navbar li a {
   text-decoration: none;
   transition: background-color 0.3s;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1210px) {
